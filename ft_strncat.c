@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 13:16:09 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/10 16:18:26 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 23:16:07 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 
 	i = ft_strlen(s1);
 	a = 0;
-	while (a < n && s2[a] == '\0')
+	while (a < n && s2[a] != '\0')
 	{
 		s1[i] = s2[a];
 		i++;

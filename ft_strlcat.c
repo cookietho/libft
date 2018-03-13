@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 20:02:29 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/08 18:38:05 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 23:40:12 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i] = src[i - ds];
 		i++;
 	}
-	if (ds + 1 == dstsize)
+	if (ds < dstsize)
 		dst[i] = '\0';
 	return (ds + ft_strlen(src));
 }

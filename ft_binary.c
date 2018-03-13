@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_binary.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 18:33:54 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/12 21:24:47 by minakim          ###   ########.fr       */
+/*   Created: 2018/03/12 19:06:30 by minakim           #+#    #+#             */
+/*   Updated: 2018/03/12 19:24:33 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_binary(int nbr)
 {
-	unsigned char	*str;
-	size_t			i;
+	int div;
 
-	i = 0;
-	str = ((unsigned char*)b);
-	while (i < len)
+	div = 128;
+	while (div >= 1)
 	{
-		str[i] = ((unsigned char)c);
-		i++;
+		if (nbr >= div)
+		{
+			write(1, "1", 1);
+		}
+		if (nbr < div)
+		{
+			write(1, "0", 1);
+		}
+		nbr = nbr % div;
+		div = div / 2;
 	}
-	return (b);
 }

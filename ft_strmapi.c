@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/06 16:46:48 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/08 18:42:05 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 23:44:11 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 		s++;
 	}
+	fresh[i] = '\0';
 	return (fresh);
 }

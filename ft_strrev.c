@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/20 18:33:54 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/12 21:24:47 by minakim          ###   ########.fr       */
+/*   Created: 2018/03/12 18:30:54 by minakim           #+#    #+#             */
+/*   Updated: 2018/03/12 18:32:50 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+char	*ft_strrev(char *str)
 {
-	unsigned char	*str;
-	size_t			i;
+	char	t;
+	int		n;
+	int		i;
 
 	i = 0;
-	str = ((unsigned char*)b);
-	while (i < len)
+	n = 0;
+	while (str[n] != '\0')
+		n++;
+	n--;
+	while (i < n)
 	{
-		str[i] = ((unsigned char)c);
+		t = str[n];
+		str[n] = str[i];
+		str[i] = t;
 		i++;
+		n--;
 	}
-	return (b);
+	return (str);
 }

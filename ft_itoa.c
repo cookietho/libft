@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/06 16:43:10 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/09 23:04:27 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 23:52:31 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_itoa(int n)
 	neg = 1;
 	len = ft_nbrlen(n);
 	str = (char *)malloc(sizeof(char) * len + 1);
+	if (!str)
+		return (NULL);
 	if (n == 0)
 		str[0] = '0';
 	str[len] = '\0';

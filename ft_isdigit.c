@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 00:24:23 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/06 22:42:46 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 23:41:20 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	unsigned char ch;
-
-	ch = (unsigned char)c;
-	if (ch >= '0' && ch <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

@@ -6,7 +6,7 @@
 #    By: minakim <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/19 17:25:20 by minakim           #+#    #+#              #
-#    Updated: 2018/03/09 23:08:49 by minakim          ###   ########.fr        #
+#    Updated: 2018/03/12 19:22:40 by minakim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,6 +77,9 @@ ft_lstiter.c\
 ft_lstnew.c\
 ft_lstmap.c\
 ft_nbrlen.c\
+ft_binary.c\
+ft_strrev.c\
+ft_swap.c\
 ft_count_words.c\
 ft_count_letters.c
 OBJ = $(SRC:.c=.o)

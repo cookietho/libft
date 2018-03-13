@@ -6,13 +6,9 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 00:43:42 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/06 23:02:23 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/12 21:21:46 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** check if we have to include unsigned char
-*/
 
 #include "libft.h"
 

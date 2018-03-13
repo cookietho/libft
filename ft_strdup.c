@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 00:09:34 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/08 18:39:53 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 22:41:35 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	l = ft_strlen(s1);
-	s = (char*)malloc(sizeof(*s1) * 1);
+	s = (char*)malloc(sizeof(char) * (l + 1));
 	if (s == 0)
 		return (s);
 	while (i < l)
@@ -28,5 +28,6 @@ char	*ft_strdup(const char *s1)
 		s[i] = s1[i];
 		i++;
 	}
+	s[i] = '\0';
 	return (s);
 }

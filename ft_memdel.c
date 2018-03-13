@@ -6,12 +6,11 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 16:25:17 by minakim           #+#    #+#             */
-/*   Updated: 2018/02/26 17:14:57 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/12 21:24:30 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_memdel(void **ap)
 {

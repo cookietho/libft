@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/06 23:33:30 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/09 23:09:31 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/12 21:28:07 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,9 @@ char				*ft_strtrim(char const *s);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					ft_nbrlen(int nbr);
+void				ft_binary(int nbr);
+char				*ft_strrev(char *str);
+void				ft_swap(int *a, int *b);
 char				*ft_count_letters(char const *str, char c);
 int					ft_count_words(char const *str, char c);
 typedef	struct		s_list

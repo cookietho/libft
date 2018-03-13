@@ -6,7 +6,7 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/01 01:00:31 by minakim           #+#    #+#             */
-/*   Updated: 2018/03/06 23:03:47 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/11 23:47:15 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	i = 0;
-	str = (char*)malloc(sizeof(size_t) * len + 1);
+	str = (char*)malloc(sizeof(char) * len + 1);
 	if (str != NULL && s != NULL)
 	{
 		while (i < len)

@@ -6,11 +6,10 @@
 /*   By: minakim <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 17:15:12 by minakim           #+#    #+#             */
-/*   Updated: 2018/02/26 17:15:21 by minakim          ###   ########.fr       */
+/*   Updated: 2018/03/12 21:27:54 by minakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	ft_strdel(char **as)
