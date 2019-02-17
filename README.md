@@ -13,4 +13,4 @@
 
 ## Bonus Part
 ###### After completing the mandatory part, you can make additional functions that can be added to your own library.
-Once you understand the behaviors of standard functions and have fun using them, you can make your own functions that you think you would need for your future projects.
+###### Once you understand the behaviors of standard functions and have fun using them, you can make your own functions that you think you would need for your future projects.
