@@ -6,7 +6,7 @@
 #    By: minakim <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/19 17:25:20 by minakim           #+#    #+#              #
-#    Updated: 2018/03/12 19:22:40 by minakim          ###   ########.fr        #
+#    Updated: 2019/06/01 16:43:35 by minakim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ ft_isascii.c\
 ft_isdigit.c\
 ft_isprint.c\
 ft_itoa.c\
+ft_itoa_base.c\
 ft_memalloc.c\
 ft_memccpy.c\
 ft_memchr.c\
@@ -68,6 +69,7 @@ ft_strsplit.c\
 ft_strstr.c\
 ft_strsub.c\
 ft_strtrim.c\
+ft_strupper.c\
 ft_tolower.c\
 ft_toupper.c\
 ft_lstadd.c\
@@ -80,8 +82,19 @@ ft_nbrlen.c\
 ft_binary.c\
 ft_strrev.c\
 ft_swap.c\
+ft_wstrlen.c\
+ft_strjoin_mod.c\
 ft_count_words.c\
-ft_count_letters.c
+ft_count_letters.c\
+check.c\
+ft_printf.c\
+initiation.c\
+print_format.c\
+specifier1.c\
+specifier2.c\
+specifier3.c\
+trim.c
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
